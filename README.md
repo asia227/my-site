@@ -2,32 +2,73 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Простой сайт</title>
+    <title>Красивый сайт</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-            padding-top: 50px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: 'Segoe UI', sans-serif;
         }
-        .container {
+
+        .card {
             background: white;
-            padding: 20px;
-            display: inline-block;
-            border-radius: 10px;
+            width: 350px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            text-align: center;
         }
-        img {
-            max-width: 300px;
-            border-radius: 8px;
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        p {
+            color: #555;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #667eea;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #764ba2;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <a href="index.html">На главную</a>
-    <div class="container">
-        <h1>Мой первый сайт</h1>
-        <img src="https://via.placeholder.com/300" alt="Изображение">
-        <p>Это простая страница с картинкой.</p>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Природа">
+        <div class="card-content">
+            <h1>Добро пожаловать</h1>
+            <p>Это простой, но стильный сайт с изображением из интернета.</p>
+            <button onclick="alert('Спасибо, что нажал!')">Нажми меня</button>
+        </div>
     </div>
+
 </body>
 </html>
