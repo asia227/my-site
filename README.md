@@ -23,6 +23,7 @@
     </style>
 </head>
 <body>
+    <a href="index.html">На главную</a>
     <div class="container">
         <h1>Мой первый сайт</h1>
         <img src="https://via.placeholder.com/300" alt="Изображение">
